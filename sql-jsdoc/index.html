@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    #app {
+      display: flex;
+      height: calc(100vh - 40px);
+      padding: 10px;
+      font-family: Menlo, Monaco, 'Courier New', monospace
+    }
+
+    #app div {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0px
+    }
+
+    #app div+div {
+      margin-left: 10px;
+    }
+
+    #app div textarea {
+      height: 100%;
+      font-size: 16px;
+      padding: 15px;
+    }
+
+    #app div.div {
+      height: 100%;
+      font-size: 16px;
+      padding: 15px;
+    }
+
+    pre {
+      border: 1px solid black;
+      padding: 15px;
+      overflow: scroll;
+      margin: 0;
+      height: 100%;
+      font-size: 16px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <p>CREATE TABLE SQL</p>
+      <textarea name="" id="code" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <p>jsdoc</p>
+      <pre><code id="jsdoc"></code></pre>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
